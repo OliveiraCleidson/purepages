@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+:root {
+  --container-bg-color: #000;
+  --container-text-default-color: #FFF;
+  --navbar-background: rgb(26, 9, 34);
+  --navbar-link-color: #d5bcff;
+  --navbar-font-family: 'Quicksand', serif;
+  --main-bg-background: url('./assets/illustration-one.png');
+}
+html{
+  font-size: 65,5%;
+}
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--navbar-link-color);
+}
+
+a:hover{
+  filter: brightness(0.8);
+}
+
+body{
+  background: var(--container-bg-color);
+}
+
+.container::before{
+  background-image: var(--main-bg-background);
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 250px;
+}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+  color: var(--container-text-default-color);
+}
+
+header{
+  width: 100%;
+}
+
+.navbar{
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  font-size: 1em;
+}
+
+.navbar img{
+  max-width: 100px;
+}
+
+.navbar ul{
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.navbar ul li{
+  float: left;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: var(--navbar-link-color);
+  font-family: var(--navbar-font-family);
+  font-size: 1em;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 10px;
+}
+
+.main {
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(#000, rgb(9, 0, 15), #000);
+}
+
+.main header > .image-animation{
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: auto;
+  filter: grayscale(30%) brightness(0.8);
+  max-width: max-content;
+  max-height: 30rem;
+  box-shadow: 1px 1px 0.5em rgb(61, 61, 61);
+}
+
+.main header > .image-animation > img{
+  max-height: 30rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+.main header > .image-animation > img.inactive{
+  display: none;
+}
+
+.main header > .buttonsGroup{
+  width: 100%;
+}
+
+.main header > .buttonsGroup button{
+  min-width: 1em;
+  min-height: 1.5em;
+  border-radius: 1em;
+  background-color: var(--navbar-link-color);
+  border-color: rgb(51, 51, 51);
+  filter: brightness(0.8);
+}
+
+.main header > .buttonsGroup button.inactive{
+  filter: brightness(0.5);
+}
+
+.section-one{
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 100%;
+  justify-content: space-evenly;
+  background: linear-gradient(#000, rgb(23, 0, 26), #000);
+}
+
+.section-one > div{
+  background-color: tomato;
+  display: flex;
+  margin-bottom: 1.650em;
+}
+
+.section-one > div img{
+  width: 100%;
+  display: flex;
+}
+
+.section-two {
+  min-width: 100%;
+}
+
+
+.main, .section-one, .section-two, .footer{
+  max-width: 100%;
+}
+/* Extra Small Devices */
+@media only screen and (max-width: 680px){
+  .section-one > div{
+    max-width: 100%;
+  }
+}
+
+/* Small Devices */
+@media only screen and (min-width: 680px){
+  .section-one > div{
+    max-width: 100%;
+  }
+}
+/* Medium Devices (landscape tablet) */
+@media only screen and (min-width: 768px){
+  .section-one > div{
+    max-width: 40%;
+  }
+}
+/* Large Devices */
+@media only screen and (min-width: 992px){
+  .section-one > div{
+    max-width: 30%;
+  }
+  .container{
+    margin: auto;
+  }
+}
