@@ -4,24 +4,26 @@
   <meta charset='utf-8' />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel='stylesheet' href='landing-page1.css' />
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Landing Page One</title>
 </head>
 
-<body onload="animatedImages()">
+<body onload="onLd()">
   <div class='container'>
     <header>
       <nav class="navbar">
-        <a href="#"><img src='./assets/logo.png' alt='logo' /></a>
+        <a href="#"><span class="material-icons icons">
+            sentiment_very_satisfied
+          </span><br />Logo</a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#section-one">Services</a></li>
+          <li><a href="#section-two">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class='main'>
+    <main id="home" class='main'>
       <header>
         <h1><span>Simple</span> Landing Page.</h1>
         <h2>Without frameworks or libraries, pure HTML, CSS and JS.</h2>
@@ -29,28 +31,40 @@
     </main>
 
 
-    <section class='section-one'>
+    <section id="section-one" class='section-one'>
       <div>
-        <img src='./assets/image_4.jpg' />
+        <span class="material-icons icon">
+          assignment_ind
+        </span>
       </div>
       <div>
-        <img src='./assets/image_2.jpg' />
+        <span class="material-icons icon">
+          camera_enhance
+        </span>
       </div>
       <div>
-        <img src='./assets/image_1.jpg' />
+        <span class="material-icons icon">
+          build
+        </span>
       </div>
       <div>
-        <img src='./assets/image_3.jpg' />
+        <span class="material-icons icon">
+          important_devices
+        </span>
       </div>
       <div>
-        <img src='./assets/image_2.jpg' />
+        <span class="material-icons icon">
+          favorite
+        </span>
       </div>
       <div>
-        <img src='./assets/image_4.jpg' />
+        <span class="material-icons icon">
+          thumb_up
+        </span>
       </div>
     </section>
 
-    <section class='section-two'>
+    <section id="section-two" class='section-two'>
       Section two
     </section>
 

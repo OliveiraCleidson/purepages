@@ -1,3 +1,7 @@
+function onLd() {
+  animatedImages();
+  generateLorem();
+}
 
 function animatedImages() {
   let myDiv = document.createElement('div')
@@ -44,4 +48,17 @@ function changeImage(id) {
   let btnToActive = document.getElementById(`btn${id}`);
   btnActive.className = 'inactive';
   btnToActive.className = 'active';
+}
+
+function generateLorem() {
+  let lorem = "<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada magna sed" +
+    "dolor sollicitudin, et luctus mi dictum. Etiam rutrum gravida dignissim. Aenean mauris quam, " +
+    "ultricies ut augue at, hendrerit tristique urna. Phasellus hendrerit magna at luctus semper. " +
+    "Vivamus quis sem vel nisl tincidunt pharetra non vitae elit. Suspendisse sit amet pellentesque metus. " +
+    "Donec ac dui ligula. Vestibulum venenatis, ex vel suscipit tempor, lectus lacus ornare eros, ut " +
+    "viverra nunc enim ut velit. ";
+  let divs = document.querySelectorAll(".section-one > div");
+  for (let i = 0; i < divs.length; i++) {
+    divs[i].innerHTML = divs[i].innerHTML + lorem;
+  }
 }

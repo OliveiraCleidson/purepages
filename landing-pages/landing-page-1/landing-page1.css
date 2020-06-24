@@ -94,6 +94,16 @@ header{
   padding: 10px;
 }
 
+.navbar > a > span.material-icons.icons {
+  font-size: 4em;
+}
+
+.navbar > a{
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+
 .main {
   text-align: center;
   width: 100%;
@@ -147,9 +157,16 @@ header{
 }
 
 .section-one > div{
-  background-color: tomato;
   display: flex;
+  text-align: justify;
+  justify-content: center;
+  justify-items: baseline;
+  flex-flow: row wrap;
   margin-bottom: 1.650em;
+}
+
+.section-one > div > span.material-icons.icon{ 
+  font-size: 4em;
 }
 
 .section-one > div img{
@@ -189,6 +206,11 @@ header{
   .section-one > div{
     max-width: 30%;
   }
+
+  .section-one > div > span.material-icons.icon{ 
+    font-size: 6em;
+  }
+
   .container{
     margin: auto;
   }
