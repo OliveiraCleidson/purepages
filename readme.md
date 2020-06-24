@@ -5,7 +5,7 @@ This repository was created for upload pages without frameworks or libraries and
 2. Clone on your computer
 ```sh
 $ git clone https://github.com/OliveiraCleidson/purepages.git 'your-folder'
-$ cd `your-golder`
+$ cd `your-folder`
 ```
 3. Create a new branch to contribute
 ```sh
